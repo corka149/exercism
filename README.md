@@ -1,3 +1,3 @@
-# Track from exercism.io
+# Tracks from exercism.io
 
 Go to https://exercism.io

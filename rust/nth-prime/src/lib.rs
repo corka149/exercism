@@ -23,10 +23,7 @@ fn is_prime(x: u32) -> bool {
     let root = (x as f32).sqrt().round() as u32;
     let not_divisible = || !(2..(root + 1)).any(|y| x % (y) == 0);
 
-    let a = is_not_even();
-    let b = not_divisible_by_three();
-    let c = not_divisible();
-    x == 2 || x == 3 || (a && b && c)
+    x == 2 || x == 3 || (is_not_even() && not_divisible_by_three() && not_divisible())
 }
 
 fn sum_digits(x: u32) -> u32 {
